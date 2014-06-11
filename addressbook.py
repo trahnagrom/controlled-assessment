@@ -33,6 +33,8 @@ elif answer == "2" :
     for line in temp1:
         if searchcriteria in line:
             print line
+        else: 
+            print ("No Results Found") 
 
 
 # USER DID NOT PICK CREATE OR SEARCH 
