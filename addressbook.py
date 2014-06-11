@@ -6,12 +6,12 @@ if answer == "1" :
     #print ("This is where we create")
     # collect information
 
-    lastname = raw_input("What is the persons last name? ")
-    firstname = raw_input("What is the persons first name? ")
-    phone = raw_input("What id the persons phone number? ")
-    email = raw_input("What is the persons email address? ")
-    address = raw_input("What is the persons address? ")
-
+    lastname = input("What is the persons last name? ")
+    firstname = input("What is the persons first name? ")
+    phone = input("What id the persons phone number? ")
+    email = input("What is the persons email address? ")
+    address = input("What is the persons address? ")
+    postcode = input("What is the persons postcode? ")
     #create or append addressbookdata
 
     temp1 = open("addressbookdata","a")
@@ -32,7 +32,7 @@ elif answer == "2" :
     temp1 = open("addressbookdata","r")
     for line in temp1:
         if searchcriteria in line:
-        print line
+            print line
 
 
 # USER DID NOT PICK CREATE OR SEARCH 
