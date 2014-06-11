@@ -1,7 +1,7 @@
 import requests
 
 
-a = raw_input('Enter currency to convert from?')
+a = input('Enter currency to convert from?')
 a = a.upper()
 
 
