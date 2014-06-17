@@ -2,7 +2,7 @@
 
 ##Task 1 - 
 
-In this task, I split up the code I needed to make into 
+In this task, I split up the code I needed to make into four segments. These segments were: saving the rates for the conversion, recieving and input, converting the value and then the last part of the code was to display the output to the user.
 
 This was my first try:
 ```python
