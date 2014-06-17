@@ -2,7 +2,7 @@
 
 ##Task 1 - 
 
-In this task, I split up 
+In this task, I split up the code I needed to make into 
 
 This was my first try:
 ```python
