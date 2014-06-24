@@ -10,7 +10,9 @@
 For this task I needed to split the code into three different parts. These parts were:
 
 1) The system should be able to have exchange rates changed when necessary by the user.
+
 2) The user must input the amount they want to convert, the currency they are converting from and the currency they are converting to. 
+
 3) The output must be put to two decimal places (eg. £1.09)
 
 
