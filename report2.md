@@ -1,13 +1,17 @@
-#controlled_assessment
+#Controlled Assessment
 
 ##Task 1
 
 
-###Money converter
+###Currency Converter
 
-1. The system should be able to have exchange rates changed regulary by the user
-1. The user must input an amount, select a currency to convert from and to, and get the correct output
-1. The amount must be put to two decimal places E.G £1.09
+####Design 
+
+For this task I needed to split the code into three different parts. These parts were:
+
+ -The system should be able to have exchange rates changed when necessary by the user.
+ -The user must input the amount they want to convert, the currency they are converting from and the currency they are converting to. 
+ -The output must be put to two decimal places (eg. £1.09)
 
 
 
