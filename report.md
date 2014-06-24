@@ -3,10 +3,10 @@
 ##Task 1 - 
 
 In this task, I split up the code I needed to make into four segments. These segments were:
--Saving the rates for the conversion 
--Recieving and input
--Converting the value
--Display the output to the user.
+ -Saving the rates for the conversion 
+ -Recieving and input
+ -Converting the value
+ -Display the output to the user.
 
 This was my first try:
 ```python
