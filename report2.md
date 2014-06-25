@@ -237,7 +237,7 @@ def conversion(fromCurr, toCurr, value):
 print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
 
 ```
-For this code I set the curreenices and their rates, using Punds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert.It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
+For this code I set the curreenices and their rates, using Punds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert. It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
 
 Task 1 PASSED
 
@@ -248,39 +248,34 @@ Task 1 PASSED
 
 ###Address book
 
-1. A surname and first name
-1. Two lines of the address and the post code
-1. A telephone number
-1. Date of birth
-1. Email address
+1. lastname
+2. firstname
+3. phone        
+4. email
+5. address
+6. postcode
 
-Search with:
+####Design
 
-1. By surname to retrieve and display the details for a contact
-1. By the date of birth to retrieve and display all contacts with a birthday in a particular month
+At the start of the program, the user will be displayed an option whether to create a new entry into the address book or to search the address book for an already present entry. If 'Option 1' is selected then the user will be asked to enter the necessary information. If instead, 'Option 2' is selected then the user will be aksed to inputnthe piece of information they want to search, such as entering the name or phone number that is being searched for within the database. Once the bit of information wanted has been searched then the program runs through the different categories until a match is found. It will display an error message for each category that does not have a match within it. 
 
 
 ###Pseudo code
 ```
-Welcome the user to the address book     
-The address book will then ask the user to input two number to select if they want to add or search for an address
-If the user clicks 1 they will be taken to the address adder
-It will ask them to make an address based of their:
-First name
-Last name
-Telephone
-Email 
-Address
-Once this process is done it will add it to the address book to be search for at a later date
-If the user pressed 2 then it will take them to the search engine
-It will ask the user if they want to search by surname or by date of birth
-If 1 is pressed it will ask the user to input a surname
-The user will input a surname and the computer will find anyone in the address book with that surname
-It will then print to the user all of the people with that surname
-If 2 is pressed then it will search with the date of birth
-The user must input the numbers 01 to 12
-The numbers the user has input to the computer will then be used to search for the date of birth
-The computer will then print all of the contacts with the same date
+BEGIN
+INPUT 1 or 2 depending on job that is necessary
+IF INPUT=1
+INPUT numb1 as c_type1[key]
+MATCH c_type1, c_type2 to key in dictionary
+IF c_type1 != Pound Sterling and c_type2 != Pound Sterling:
+    CONVERT c_type1 into Pound Sterling
+    CONVERT Pound Sterling into c_type2
+    RETURN int of c_type2
+ELSE:
+    IDENTIFY Pound Sterling as c_type1 or c_type2
+    CHANGE this value to or from Pound Sterling
+    RETURN int of c_type2
+
 ```
 
 
