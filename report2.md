@@ -28,8 +28,6 @@ The answer is the value of the two numbers you just multiplyed.
 
 This is what I believe is necessary for the code to work successfully.
 
-####Programming Techniques
-List - I used this whilst setting the rates in my first attempt at the code.
 
 
 
@@ -54,7 +52,7 @@ ELSE:
 
 ####Attempt 1 (FAILED)
 
-This was the first code for the convert
+This was the first code for the conversion
 ```python
 allowables = ["pounds", "dollars", "euro", "yen"]
 rates = [1,2,3,4]
@@ -242,6 +240,12 @@ For this code I set the curreenices and their rates, using Punds Sterling as the
 Task 1 PASSED
 
 
+####Programming Techniques
+List - I used this whilst setting the rates in my first attempt at the code.
+
+Variable - I used 'c_type' then a value, which stood for currency type, this was the currencies being converted from and to.
+
+
 
 ##Task 2
 
@@ -260,23 +264,27 @@ Task 1 PASSED
 At the start of the program, the user will be displayed an option whether to create a new entry into the address book or to search the address book for an already present entry. If 'Option 1' is selected then the user will be asked to enter the necessary information. If instead, 'Option 2' is selected then the user will be aksed to inputnthe piece of information they want to search, such as entering the name or phone number that is being searched for within the database. Once the bit of information wanted has been searched then the program runs through the different categories until a match is found. It will display an error message for each category that does not have a match within it. 
 
 
-###Pseudo code
+###Pseudocode
 ```
 BEGIN
-INPUT 1 or 2 depending on job that is necessary
-IF INPUT=1
-INPUT numb1 as c_type1[key]
-MATCH c_type1, c_type2 to key in dictionary
-IF c_type1 != Pound Sterling and c_type2 != Pound Sterling:
-    CONVERT c_type1 into Pound Sterling
-    CONVERT Pound Sterling into c_type2
-    RETURN int of c_type2
-ELSE:
-    IDENTIFY Pound Sterling as c_type1 or c_type2
-    CHANGE this value to or from Pound Sterling
-    RETURN int of c_type2
+CHOOSE eithercreate an entry or search an entry
+IF creating:
+    INPUT details:
+                  -lastname
+                  -firstname
+                  -phone
+                  -email
+                  -address
+                  -postcode
+STORE details in addressbookdata
+Print ('Data Entry Successful')
 
-```
+ELSE IF searching:
+    INPUT information being searched
+    FOR each category conatining necessary data 
+Print whole data entry
+
+ELSE Print ('No Results Found')
 
 
 ###Task 2 (PASSED)
