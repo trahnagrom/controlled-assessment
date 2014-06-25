@@ -446,7 +446,7 @@ print('The ISBN number is -->    ' + ISBNNumber)
 
 ```
 
-This code was a failure due to the fact that I tried to implement feature, this being unnecessary I removed it and made an altered code.
+This code was a failure due to the fact that I tried to implement a quit feature, this being unnecessary I removed it and made an altered code.
 
 
 ###Attempt 2 (PASSED)
