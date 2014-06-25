@@ -28,13 +28,31 @@ The answer is the value of the two numbers you just multiplyed.
 
 This is what I believe is necessary for the code to work successfully.
 
-###Psuedocode
+####Programming Techniques
+List - I used this whilst setting the rates in my first attempt at the code.
+
+
+
+####Psuedocode
+
+```
+BEGIN
+INPUT currency to be converted, currency converting to (Pound Sterling/Euro/US Dollar/Japanese Yen)
+ASSIGN to variables: c_type1, c_type2
+INPUT numb1 as c_type1[key]
+MATCH c_type1, c_type2 to key in dictionary
+IF c_type1 != Pound Sterling and c_type2 != Pound Sterling:
+    CONVERT c_type1 into Pound Sterling
+    CONVERT Pound Sterling into c_type2
+    RETURN int of c_type2
+ELSE:
+    IDENTIFY Pound Sterling as c_type1 or c_type2
+    CHANGE this value to or from Pound Sterling
+    RETURN int of c_type2
 
 ```
 
-```
-
-###Attempt 1 (FAILED)
+####Attempt 1 (FAILED)
 
 This was the first code for the convert
 ```python
@@ -148,10 +166,9 @@ print(' your converted ammount is {0} {1}'.format(ammount,allowables[var2]))
 
 ```
 
-This code worked but only with GBP used as the currency being converted from, I have commented my first attempt at the code however I realised I could make it much shorter by not using different equations for the conversions between each currency and instead, using one master equation,into which the currencies may be substituted.
+This code worked but only with GBP used as the currency being converted from, I have commented my first attempt at the code however I realised I could make it much shorter by not using different equations for the conversions between each currency and instead, using one master equation, into which the currencies may be substituted.
 
-
-###Attempt 2 (PASSED)
+####Attempt 2 (PASSED)
 
 ```python
 currencies= {
@@ -220,12 +237,7 @@ def conversion(fromCurr, toCurr, value):
 print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
 
 ```
-
-
-
-Task 1 was one of the hardest tasks partly because of trying to convert to numbers.
-It took a while but i finaly got it. After that it was easy.
-Just put some words to print to the user to make it look pretty.
+For this code I set the curreenices and their rates, using Punds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert.It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
 
 Task 1 PASSED
 
