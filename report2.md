@@ -7,6 +7,8 @@
 
 ####Design 
 
+#####User Requirements:
+
 For this task I needed to split the code into three different parts. These parts were:
 
 1) The system should be able to have exchange rates changed when necessary by the user.
@@ -356,19 +358,43 @@ I got this program to work as I wanted it on my first attempt; I struggled with 
 
 ####Design
 
+#####User Requirements
+
+1) The inputted number should be exactly 10 digits long.
+
+2) It can only contain letters, no other characters.
+
+3) It should take the input which is 10 digits and work out the 11th digit, adding it on to the end, creating an 11-digit number.
+
+This is by far the easiest of the three tasks. All I had to do was create an system with which the necessary equation could work, then add the answer from this equation onto the input.
 
 
-###Pseudo code
+
+###Pseudocode
 
 ```
-Asks the user to input two numbers
-If 2 pressed the programme is ended
-If 1 is pressed the code goes on
-It asks the to input a 10 digit number
-If the digit number is not 10 it then loops to enter a 10 digit number
-Once the user has input a 10 digit number the maths side of the code works out the number
-The end result it the output to the user
+BEGIN
+INPUT 10-digit number[list]
+IF INPUT==10 numbers 
+STORE INPUT as BASE
+INPUT=LIST:
+           Index=0*11
+           Index=1*10
+           Index=2*9
+           Index=3*8
+           Index=4*7
+           Index=5*6
+           Index=6*5
+           Index=7*4
+           Index=8*3
+           Index=9*2
+SUMOF LIST = DIGIT11
+DIGIT11/11 = DIGIT11+Remainder
+DIGIT11-Remainder = DIGIT11
+ISBN == [BASE, DIGIT11]
+
 ```
+
 
 ###Task 3 (PASSED)
 ```python
