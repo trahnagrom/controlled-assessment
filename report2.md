@@ -395,32 +395,25 @@ ISBN == [BASE, DIGIT11]
 
 ```
 
+###Attempt 1 (FAILED)
 
-###Task 3 (PASSED)
-```python
-#Tells the user to choose between starting or ending the programme
+```python 
 decision = str(input(""" What would you like to do?; 
-1) Convert a 10 digit number to an ISBN number(1) 
-2) Quit and end the programme(2)""")) 
+1) Convert a 10 digit number to an ISBN number 
+2) Quit and end the programme""")) 
 
-#Ends the programme
 if decision == "2": 
     quit()
-    print("Good Bye!") 
-    
-#Asks the user to input a 10 digit number
+
 elif decision == "1": 
-    (ISBN)=raw_input("Enter a 10 digit number") 
-    
-#If the number isnt 10 it will loop round and ask the user to re-input the number
+    ISBN=input("Enter a 10 digit number:") 
+
 while len(ISBN)!= 10: 
 
-#Informs the user the number that has been given to the computer isnt 10 digits
-    print('you have not entered a 10 digit number!!!') 
-    ISBN=int(input('Please enter a 10 digit number ')) 
+    print('YOU DID NOT ENTER A 10 DIGIT NUMBER !!!') 
+    ISBN=int(input('Please enter a 10 digit number: ')) 
     continue
 
-#This is the math side of things. its pretty much just the ISBN.
 else: 
 
     Di1=int(ISBN[0])*11
@@ -441,10 +434,44 @@ Di11=11-num
 if Di11==10: 
     Di11='X'
 ISBNNumber=str(ISBN)+str(Di11) 
-#Shows the user what number has been output by the computer thus being the ISBN number
-print('The ISBN number is -->    ' + ISBNNumber) 
+print('The ISBN number is -->    ' + ISBNNumber)
 
-The hardest part of the code was the maths part but nothing else was that bad.
-It was pretty easy.
 ```
-Task 3 PASSED
+
+This code was a failure due to the fact that I tried to implement feature, this being unnecessary I removed it and made an altered code.
+
+
+###Attempt 2 (PASSED)
+
+```python
+ISBN=''
+
+while len(str(ISBN))!=10:
+
+    print('Please make sure you have entered a number which is exactly 10 characters long.')
+    ISBN=raw_input('Please enter the 10 digit number: ')
+    
+
+Digit1=int(ISBN[0])*11
+Digit2=int(ISBN[1])*10
+Digit3=int(ISBN[2])*9
+Digit4=int(ISBN[3])*8
+Digit5=int(ISBN[4])*7
+Digit6=int(ISBN[5])*6
+Digit7=int(ISBN[6])*5
+Digit8=int(ISBN[7])*4
+Digit9=int(ISBN[8])*3
+Digit10=int(ISBN[9])*2
+Result=(Digit1+Digit2+Digit3+Digit4+Digit5+Digit6+Digit7+Digit8+Digit9+Digit10)
+Remainder=Result%11
+Digit11=11-Remainder
+if Digit11==10:
+   Digit11='X'
+ISBNNumber=str(ISBN)+str(Digit11)
+print('Your 11 digit ISBN Number is ' + ISBNNumber)
+
+```
+
+
+
+
