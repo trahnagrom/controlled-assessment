@@ -147,46 +147,77 @@ print(' your converted ammount is {0} {1}'.format(ammount,allowables[var2]))
 
 ```
 
+This code worked but only with GBP used as the currency being converted from, I have commented my first attempt at the code however I realised I could make it much shorter by not using different equations for the conversions between each currency and instead, using one master equation,into which the currencies may be substituted.
+
 
 ###Attempt 2 (PASSED)
 
 ```python
-#http://stackoverflow.com/questions/20398017/showing-decimal-places-python-2-7-and-decimal-datatype#
-#setup the decimal data type (including number of decimal places)
-import decimal
+currencies= {
+    "Pound Sterling": 1, 
+    "Euro": 1.2, 
+    "US Dollar": 1.6, 
+    "Japanese Yen": 200
+    }
 
-#get the current value and type from the user
-currencyAmount = decimal.Decimal(raw_input('please enter the amount: '))
-currencyType = int(raw_input('please enter the type or if you want to change the rates (1 = pound, 2 = euro, 3 = dollar, 4 = yen): '))
+short_hand = {
+    "GBP": "Pound Sterling",
+    "EUR": "Euro",
+    "USD": "US Dollar",
+    "JPY": "Japanese Yen"
+    }
+    
+c_type1 = raw_input("What Currency are you converting from? GBP/EUR/USD/JPY: ")
 
-#set the exchange rates (based on sterling)
-euro = decimal.Decimal('1.2')
-dollar = decimal.Decimal('1.6')
-yen = decimal.Decimal('200')
-#This will multiply the 2 numbers that you want to convert 
+if c_type1 == "GBP" or "EUR" or "USD" or "JPY":
+    "You entered %s" %(c_type1)
+else:
+    print c_type1, "is not a valid input"
+    c_type1 = raw_input("Please enter a valid currency to convert from- GBP/EUR/USD/JPY: ")
+    
+c_type2 = raw_input("What Currency are you converting to? GBP/EUR/USD/JPY: ")
 
-#convert the currency into pound sterling
-if (currencyType == 2):
-    currencyAmount = currencyAmount / euro
-elif (currencyType == 3):
-    currencyAmount = currencyAmount / dollar
-elif (currencyType == 4):
-    currencyAmount = currencyAmount / yen
-#Tells the computer if a number 1 to 4 is picked it will run ethier pound, euro, yen or dollars 
+if c_type2 != "GBP" or "EUR" or "USD" or "JPY":
+    "You entered %s" %(c_type1)
+else:
+    print c_type2, "is not a valid input"
+    c_type2 = raw_input("Please enter a valid currency to convert to- GBP/EUR/USD/JPY: ")
 
-#ask the user what currency they want it converted into
-currencyConvert = int(raw_input('please enter the currency you would like to convert to (1 = pound, 2 = euro, 3 = dollar, 4 = yen): '))
-#it then takes the numbers 1 to 4 and runs what the number is linked to.
-#convert the currency into the new format (pound already done in previous steps)
-if (currencyConvert == 2):
-    currencyAmount = currencyAmount * euro
-elif (currencyConvert == 3):
-    currencyAmount = currencyAmount * dollar
-elif (currencyConvert == 4):
-    currencyAmount = currencyAmount * yen
+def rate(c_type1, c_type2):
+    if c_type1 == "GBP":
+        print "exchange rate is", currencies["Pound Sterling"]
+    if c_type1 == "EUR":
+        print "exchange rate is", currencies["Euro"]
+    if c_type1 == "USD":
+        print "exchange rate is", currencies["US Dollar"]
+    if c_type1 == "JPY":
+        print "exchange rate is", currencies["Japanese Yen"]
+    if c_type2 == "GBP":
+        print "to", currencies["Pound Sterling"]
+    if c_type2 == "EUR":
+        print "to", currencies["Euro"]
+    if c_type2 == "USD":
+        print "to", currencies["US Dollar"]
+    if c_type2 == "JPY":
+        print "to", currencies["Japanese Yen"]
 
-#show the amount of money converted to user
-print 'the result of the currency conversion was ',  currencyAmount.quantize(decimal.Decimal('0.00'))
+rate(c_type1, c_type2)
+
+numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1))
+
+def conversion(fromCurr, toCurr, value):
+    if fromCurr == "GBP":
+        answer = value * float(currencies[short_hand[toCurr]])
+        return answer
+    elif toCurr == "GBP":
+        answer = value / float(currencies[short_hand[fromCurr]])
+    else:
+        answer = value / float(currencies[short_hand[fromCurr]])
+        answer = value * float(currencies[short_hand[toCurr]]) 
+        return answer
+
+print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
+
 ```
 
 Task 1 was one of the hardest tasks partly because of trying to convert to numbers.
