@@ -285,11 +285,7 @@ ELSE IF searching:
 Print whole data entry
 
 ELSE Print ('No Results Found')
-
-
-###Task 2 (PASSED)
-
-```python
+```
 
 #####addressbookdata conatins:
 ```
@@ -299,7 +295,6 @@ Morris, Sally, The Old Lodge, Hook, RG23 5RD, 01256 728443, 19/02/1975, smorris@
 Cobbly, Harry, 345 The High Street, Guildford, GU2 4KJ,	01458 288763, 30/03/1960, harry.cobbly@somewhere.org.uk
 Khan, Jasmine, 36 Hever Avenue, Edenbridge, TN34 4FG, 01569 276524, 28/02/1980, jas.khan@hotmail.com
 Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	harriet.vickers@btinternet.com
-
 ```
 
 
