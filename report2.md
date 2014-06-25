@@ -346,6 +346,7 @@ Cobbly, Harry, 345 The High Street, Guildford, GU2 4KJ,	01458 288763, 30/03/1960
 Khan, Jasmine, 36 Hever Avenue, Edenbridge, TN34 4FG, 01569 276524, 28/02/1980, jas.khan@hotmail.com
 Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	harriet.vickers@btinternet.com
 ```
+I got this program to work as I wanted it on my first attempt, I struggled with getting the data into the database however, and had to input the data into addressbookdata manually by copy and pasting from the document containing the necessary data. I added the option to manually add a new entry into the address book, although it was not compulsary.
 
 
 ##Task 3
@@ -353,8 +354,8 @@ Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	
 
 ###ISBN
 
-1. The number entered must be correct length
-1. Only contains the digits 0 to 9
+####Design
+
 
 
 ###Pseudo code
