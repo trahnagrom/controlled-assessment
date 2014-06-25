@@ -15,6 +15,7 @@ For this task I needed to split the code into three different parts. These parts
 
 3) The output must be put to two decimal places (eg. £1.09)
 
+I also need to make sure that the input is a number, and an error message must be displayed if the input is invalid. 
 
 
 ###Pseudo code
@@ -22,13 +23,12 @@ For this task I needed to split the code into three different parts. These parts
 ```
 It will ask for what abbreviated curremcy code for the currency you want to convert from.
 They will be: GBP, EUR, USD, JPY
-GBP being Pounds Sterling, EUR is Euros, USD is US Dollars, JPY is Japanese Yen.
+GBP being Pounds Sterling(£), EUR is Euros(€), USD is US Dollars($), JPY is Japanese Yen(¥).
 After that it then asks what currency you want to convert to.
-It 
-It then takes the numbers (Rates) and multiplys then together.
-It then prints out the answer.
+It will use the same system before, currency codes.
+It will then multiply the input by the currency rate.
+It then prints out the result.
 The answer is the value of the two numbers you just multiplyed.
-If you enter you want to convert from pounds, to pounds it just prints the number you entered.
 ```
 This is my plan to make task one work.
 
