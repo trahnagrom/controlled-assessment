@@ -239,6 +239,10 @@ print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_t
 ```
 For this code I set the currenices and their rates, using Pounds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert. It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
 
+##Success Critera
+
+My program meets all the requirements, apart from the fact it gives responses to only 1 decimal place.
+
 Task 1 PASSED
 
 
@@ -349,6 +353,8 @@ Khan, Jasmine, 36 Hever Avenue, Edenbridge, TN34 4FG, 01569 276524, 28/02/1980, 
 Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	harriet.vickers@btinternet.com
 ```
 I got this program to work as I wanted it on my first attempt; I struggled with getting the data into the database however, and had to input the data into addressbookdata manually by copy and pasting from the document containing the necessary data. I added the option to manually add a new entry into the address book, although it was not compulsary.
+
+My program meets all the requirements and is easily accessible.
 
 Task 2 PASSED
 
@@ -475,6 +481,8 @@ print('Your 11 digit ISBN Number is ' + ISBNNumber)
 ```
 
 This code works efficiently and creates the ISBN accurately. Without the addition of the 'quit' feature this program was reasonably simple to create. 
+
+My program meets all the requirements and is easily accessible.
 
 Task 3 PASSED
 
