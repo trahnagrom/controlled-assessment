@@ -17,14 +17,14 @@ For this task I needed to split the code into three different parts. These parts
 
 I also need to make sure that the input is a number, and an error message must be displayed if the input is invalid. 
 
-The program will ask for what abbreviated curremcy code for the currency you want to convert from.
+The program will ask for what abbreviated currency code for the currency you want to convert from.
 They will be: GBP, EUR, USD, JPY
 GBP being Pounds Sterling(£), EUR is Euros(€), USD is US Dollars($), JPY is Japanese Yen(¥).
 After that it then asks what currency you want to convert to.
 It will use the same system before, currency codes.
 It will then multiply the input by the currency rate.
 It then prints out the result.
-The answer is the value of the two numbers you just multiplyed.
+The answer is the value of the two numbers you just multiplied.
 
 This is what I believe is necessary for the code to work successfully.
 
@@ -52,7 +52,7 @@ ELSE:
 
 ####Attempt 1 (FAILED)
 
-This was the first code for the conversion
+This was the first code for the conversion:
 ```python
 allowables = ["pounds", "dollars", "euro", "yen"]
 rates = [1,2,3,4]
@@ -235,7 +235,7 @@ def conversion(fromCurr, toCurr, value):
 print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
 
 ```
-For this code I set the curreenices and their rates, using Punds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert. It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
+For this code I set the currenices and their rates, using Pounds Sterling as the base value meaning it held the value of 1. I then set the shorthand or currency codes, for example: Pounds Sterling is GBP, US Dollars are USD and so on. I then had the program ask the user for the currency code for the currencies they are converting from and to, followed by the amount they wish to convert. It then displays the conversion rate and the amount of their chosen currency that they will recieve. 
 
 Task 1 PASSED
 
@@ -261,13 +261,13 @@ Variable - I used 'c_type' then a value, which stood for currency type, this was
 
 ####Design
 
-At the start of the program, the user will be displayed an option whether to create a new entry into the address book or to search the address book for an already present entry. If 'Option 1' is selected then the user will be asked to enter the necessary information. If instead, 'Option 2' is selected then the user will be aksed to inputnthe piece of information they want to search, such as entering the name or phone number that is being searched for within the database. Once the bit of information wanted has been searched then the program runs through the different categories until a match is found. It will display an error message for each category that does not have a match within it. 
+At the start of the program, the user will be displayed an option whether to create a new entry into the address book or to search the address book for an already present entry. If 'Option 1' is selected then the user will be asked to enter the necessary information. If instead, 'Option 2' is selected then the user will be aksed to input the piece of information they want to search, such as entering the name or phone number that is being searched for within the database. Once the bit of information wanted has been searched then the program runs through the different categories until a match is found. It will display an error message for each category that does not have a match within it. 
 
 
 ###Pseudocode
 ```
 BEGIN
-CHOOSE eithercreate an entry or search an entry
+CHOOSE either create an entry or search an entry
 IF creating:
     INPUT details:
                   -lastname
@@ -346,7 +346,7 @@ Cobbly, Harry, 345 The High Street, Guildford, GU2 4KJ,	01458 288763, 30/03/1960
 Khan, Jasmine, 36 Hever Avenue, Edenbridge, TN34 4FG, 01569 276524, 28/02/1980, jas.khan@hotmail.com
 Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	harriet.vickers@btinternet.com
 ```
-I got this program to work as I wanted it on my first attempt, I struggled with getting the data into the database however, and had to input the data into addressbookdata manually by copy and pasting from the document containing the necessary data. I added the option to manually add a new entry into the address book, although it was not compulsary.
+I got this program to work as I wanted it on my first attempt; I struggled with getting the data into the database however, and had to input the data into addressbookdata manually by copy and pasting from the document containing the necessary data. I added the option to manually add a new entry into the address book, although it was not compulsary.
 
 
 ##Task 3
