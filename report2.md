@@ -281,10 +281,11 @@ Print ('Data Entry Successful')
 
 ELSE IF searching:
     INPUT information being searched
-    FOR each category conatining necessary data 
+    FOR each category containing necessary data 
 Print whole data entry
 
 ELSE Print ('No Results Found')
+END
 ```
 
 ###Attempt 1 (PASSED)
