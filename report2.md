@@ -17,10 +17,6 @@ For this task I needed to split the code into three different parts. These parts
 
 I also need to make sure that the input is a number, and an error message must be displayed if the input is invalid. 
 
-
-###Pseudo code
-
-```
 The program will ask for what abbreviated curremcy code for the currency you want to convert from.
 They will be: GBP, EUR, USD, JPY
 GBP being Pounds Sterling(£), EUR is Euros(€), USD is US Dollars($), JPY is Japanese Yen(¥).
@@ -29,9 +25,14 @@ It will use the same system before, currency codes.
 It will then multiply the input by the currency rate.
 It then prints out the result.
 The answer is the value of the two numbers you just multiplyed.
-```
+
 This is what I believe is necessary for the code to work successfully.
 
+###Psuedocode
+
+```
+
+```
 
 ###Attempt 1 (FAILED)
 
@@ -219,6 +220,8 @@ def conversion(fromCurr, toCurr, value):
 print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
 
 ```
+
+
 
 Task 1 was one of the hardest tasks partly because of trying to convert to numbers.
 It took a while but i finaly got it. After that it was easy.
