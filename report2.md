@@ -350,6 +350,8 @@ Vickers, Harriet, 45 Sage Gardens, Brighton, BN3 2FG, 01675 662554,	04/04/1968,	
 ```
 I got this program to work as I wanted it on my first attempt; I struggled with getting the data into the database however, and had to input the data into addressbookdata manually by copy and pasting from the document containing the necessary data. I added the option to manually add a new entry into the address book, although it was not compulsary.
 
+Task 2 PASSED
+
 
 ##Task 3
 
@@ -471,6 +473,10 @@ ISBNNumber=str(ISBN)+str(Digit11)
 print('Your 11 digit ISBN Number is ' + ISBNNumber)
 
 ```
+
+This code works efficiently and creates the ISBN accurately. Without the addition of the 'quit' feature this program was reasonably simple to create. 
+
+Task 3 PASSED
 
 
 
