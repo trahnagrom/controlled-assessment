@@ -8,7 +8,7 @@ if answer == "1" :
 
     lastname = input("What is the persons last name? ")
     firstname = input("What is the persons first name? ")
-    phone = input("What id the persons phone number? ")
+    phone = input("What is the persons phone number? ")
     email = input("What is the persons email address? ")
     address = input("What is the persons address? ")
     postcode = input("What is the persons postcode? ")
